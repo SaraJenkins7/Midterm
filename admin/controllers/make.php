@@ -1,8 +1,8 @@
 <?php 
 
-require_once('model/database.php');
+/* require_once('model/database.php');
 require_once('model/make_db.php');
-require_once('model/vehicle_db.php'); 
+require_once('model/vehicle_db.php'); */ 
 
 $make = filter_input(INPUT_POST, 'make', FILTER_SANITIZE_STRING);
 $make_id = filter_input(INPUT_POST, 'make_id', FILTER_VALIDATE_INT);

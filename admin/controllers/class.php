@@ -1,8 +1,8 @@
 <?php 
 
-require_once('model/database.php');
+/* require_once('model/database.php');
 require_once('model/class_db.php');
-require_once('model/vehicle_db.php'); 
+require_once('model/vehicle_db.php');  */
 
 $class = filter_input(INPUT_POST, 'class', FILTER_SANITIZE_STRING);
 $class_id = filter_input(INPUT_POST, 'class_id', FILTER_VALIDATE_INT);

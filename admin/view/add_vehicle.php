@@ -1,11 +1,12 @@
 <?php include '../view/header.php'; ?>
 <main>
     <h1>Add Vehicle</h1>
-    <form action="index.php" method="post" id="add_vehicle_form">
+    <form action="../controllers/vehicle.php" method="post" id="add_vehicle_form">
         <input type="hidden" name="action" values="add_vehicle">
 
         <label>Year:</label>
         <input type="text" name="year" />
+        <br>
         <br>
 
         <label>Make ID:</label>
@@ -17,9 +18,11 @@
             <?php endforeach; ?>
         </select>
         <br>
+        <br>
 
         <label>Model:</label>
         <input type="text" name="model" />
+        <br>
         <br>
 
         <label>Type ID:</label>
@@ -31,6 +34,7 @@
             <?php endforeach; ?>
         </select>
         <br>
+        <br>
 
         <label>Class ID:</label>
         <select name="class_id">
@@ -41,9 +45,11 @@
             <?php endforeach; ?>
         </select>
         <br>
+        <br>
 
         <label>Price</label>
         <input type="text" name="price" />
+        <br>
         <br>
 
         <label>&nbsp;</label>
@@ -51,10 +57,11 @@
         <br>
     </form>
     <p>
-        <a href="vehicle_list.php">View Full Vehicle List</a>
-        <a href="make_list.php">View/Edit Vehicle Makes</a>
-        <a href="class_list.php">View/Edit Vehicle Classes</a>
-        <a href="type_list.php">View/Edit Vehicle Types</a>
+        <a href="vehicle_list.php">View Full List</a>
+        <a href="make_list.php">View/Edit Makes</a>
+        <a href="class_list.php">View/Edit Classes</a>
+        <a href="type_list.php">View/Edit Types</a>
     </p>
+    <br>
 </main>
 <?php include '../view/footer.php'; ?>

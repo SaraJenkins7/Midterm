@@ -3,7 +3,7 @@
 <section>
     <header>
         <h1>Zippy's Used Autos</h1>
-        <form action="." method="GET" id="vehicle_list_header">
+        <form action="." method="GET" id="vehicle_list_header" class="view_all">
             <input type="hidden" name="action" value="list_vehicles">
             <select name="type_id">
                 <option value="0">View All Types</option>
@@ -71,7 +71,7 @@
             <?php endforeach; ?>
         </table>
         <br>
-        <form action="admin/class.php" method="post" id="add_class">
+        <form action="../controllers/class.php" method="post" id="add_class">
             <label>Class:</label>
             <input type="text" name="action">
             <label>&nbsp;</label>
@@ -79,11 +79,12 @@
         </form>
         <p>
             <a href="add_vehicle.php">Add Vehicle</a>
-            <a href="vehicle_list.php">View Full Vehicle List</a>
-            <a href="make_list.php">View/Edit Vehicle Makes</a>
-            <a href="class_list.php">View/Edit Vehicle Classes</a>
-            <a href="type_list.php">View/Edit Vehicle Types</a>
+            <a href="vehicle_list.php">View Full List</a>
+            <a href="make_list.php">View/Edit Makes</a>
+            <a href="class_list.php">View/Edit Classes</a>
+            <a href="type_list.php">View/Edit Types</a>
         </p>
+        <br>
     </main>
 </section>
 <?php include '../view/footer.php'; ?>

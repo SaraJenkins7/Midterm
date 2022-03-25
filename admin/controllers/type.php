@@ -1,8 +1,8 @@
 <?php 
 
-require_once('model/database.php');
+/* require_once('model/database.php');
 require_once('model/type_db.php');
-require_once('model/vehicle_db.php'); 
+require_once('model/vehicle_db.php'); */ 
 
 $type = filter_input(INPUT_POST, 'type', FILTER_SANITIZE_STRING);
 $type_id = filter_input(INPUT_POST, 'type_id', FILTER_VALIDATE_INT);

@@ -3,7 +3,7 @@
 <section>
     <header>
         <h1>Zippy's Used Autos</h1>
-        <form action="." method="GET" id="vehicle_list_header">
+        <form action="." method="GET" id="vehicle_list_header" class="view_all">
             <input type="hidden" name="action" value="list_vehicles">
             <select name="type_id">
                 <option value="0">View All Types</option>
