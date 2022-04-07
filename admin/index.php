@@ -1,10 +1,10 @@
 <?php 
 
-require_once('model/database.php');
-require_once('model/vehicle_db.php');
-require_once('model/type_db.php');
-require_once('model/class_db.php');
-require_once('model/make_db.php');
+require_once('../model/database.php');
+require_once('../model/vehicle_db.php');
+require_once('../model/type_db.php');
+require_once('../model/class_db.php');
+require_once('../model/make_db.php');
 
 $type_id = filter_input(INPUT_POST, 'type_id', FILTER_VALIDATE_INT);
 $class_id = filter_input(INPUT_POST, 'class_id', FILTER_VALIDATE_INT);

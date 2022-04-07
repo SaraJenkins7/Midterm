@@ -5,9 +5,9 @@ function get_classes($class_id){
         return "All Classes";
     }
     global $db;
-    $query = 'SELECT * FROM classes WHERE class_id = class_id';
+    $query = 'SELECT * FROM classes WHERE class_id = :class_id';
     $statement = $db->prepare($query);
-    $statement->bindValue('class_id', $class_id);
+    $statement->bindValue(':class_id', $class_id);
     $statement->execute();
     $vehicle = $statement->fetch();
     $statement->closeCursor();
@@ -31,7 +31,7 @@ function add_vehicle_class($class_id, $class){
 function delete_vehicle_class($class_id){
     global $db;
     $query = 'DELETE FROM classes
-              WHERE class_id = class_id';
+              WHERE class_id = :class_id';
     $statement = $db->prepare($query);
     $statement->bindValue(':class_id', $class_id);
     $statement->execute();

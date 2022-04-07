@@ -5,7 +5,7 @@ function get_makes($make_id){
         return "All Makes";
     }
     global $db;
-    $query = 'SELECT * FROM makes WHERE make_id = make_id';
+    $query = 'SELECT * FROM makes WHERE make_id = :make_id';
     $statement = $db->prepare($query);
     $statement->bindValue(':make_id', $make_id);
     $statement->execute();
@@ -31,7 +31,7 @@ function add_vehicle_make($make_id, $make){
 function delete_vehicle_make($make_id){
     global $db;
     $query = 'DELETE FROM makes
-              WHERE make_id = make_id';
+              WHERE make_id = :make_id';
     $statement = $db->prepare($query);
     $statement->bindValue(':make_id', $make_id);
     $statement->execute();
